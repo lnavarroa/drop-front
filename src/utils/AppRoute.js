@@ -1,5 +1,14 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+//import { Route } from 'react-router-dom';
+//import { BrowserRouter as Switch, Route } from 'react-router-dom';
+//import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Redirect
+} from "react-router-dom";
 
 const AppRoute = ({
   component: Component,

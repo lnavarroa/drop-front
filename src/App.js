@@ -9,6 +9,8 @@ import LayoutDefault from './layouts/LayoutDefault';
 
 // Views 
 import Home from './views/Home';
+import Joinform from './views/Joinform';
+import NoPage from './views/NoPage';
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -37,6 +39,8 @@ const App = () => {
       children={() => (
         <Switch>
           <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
+          <AppRoute path="/join" component={Joinform} layout={LayoutDefault} />
+          <AppRoute path="*" component={NoPage} layout={LayoutDefault} />
         </Switch>
       )} />
   );
